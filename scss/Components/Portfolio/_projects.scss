@@ -1,0 +1,79 @@
+.portfolio{
+
+    &__container{
+    margin: 94px auto;
+    }
+
+    &__button{
+        background: $background-light;
+        border-radius: 4px;
+        font-size: 16px;
+        border: none;
+        padding: 6px 22px;
+        color: $title-text-color;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+    }
+
+    &__button-active{
+        background-color: $accent-color;
+    color: $main-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &__filters{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+        
+    }
+
+    &__filters--wrapper{
+        margin-bottom: 50px;
+    }
+
+    &__projects{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__project{
+        &:hover{
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    &__project-title{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 20px 24px;
+        border: 1px solid #EEEEEE;
+        width: 100%;
+    }
+
+    &__heading{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color: $title-text-color;
+    }
+
+    &__type{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: $text-color;
+    }
+
+}

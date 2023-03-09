@@ -1,0 +1,106 @@
+.footer{
+    background-color: $background-color;
+
+    &__logo {
+        margin-right: 93px;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 0.7px;
+        color: $main-color;
+        &--accent{
+        color: $accent-color; 
+        }
+    }
+    
+    &__container{
+        padding: 65px 0;
+        display: flex;
+        gap: 64px;
+    }
+
+    &__address{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $main-color;
+        
+    }
+
+    &__contatcs-box{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        
+    }
+
+    &__content-wrapper-adress{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__info{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__social-box{
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__social-box-heading{
+        font-family: 'Roboto';
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+
+    &__social-links-box{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    &__link {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+      }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: $accent-color;
+    }
+
+    &__icon{
+        fill: #AFB1B8;
+    }
+
+    &__link:hover &__icon {
+        fill: $main-color;
+    }
+    
+    &__link:focus &__icon {
+        fill: $main-color;
+    }
+}

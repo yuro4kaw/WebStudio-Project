@@ -1,0 +1,70 @@
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  text-decoration: none;
+  margin: 0;
+  
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+textarea {
+  font-family: "Roboto";
+}
+
+.title--basic {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.body {
+  background-color: $main-color;
+  color: $title-text-color;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+  margin: 0;
+  // padding-top: 80px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.link--interactive{
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.button--interactive{
+  &--active,
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+    color: $main-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
