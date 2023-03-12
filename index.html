@@ -36,7 +36,6 @@
                 </nav>
             </div>
             
-
             <div class="contacts">
                 <ul class="contacts__list">
                     <li class="contacts__item">
@@ -46,13 +45,24 @@
                             </svg>info@devstudio.com</a>
                     </li>
                     <li class="contacts__item">
-                        
                         <a class="contacts__info contacts__info--phone link--interactive" href="tel:+380961111111" ><svg class="contacts__icon" width="16" height="16">
                             <use href="img/SVG/symbol-defs.svg#modal-icon-tell"></use>
                           </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
+
+            <button 
+                 class="menu" 
+                 type="button" 
+                 aria-expanded="false" 
+                 aria-controls="menu-container"
+                 data-menu-button >
+                    <svg class="menu__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="menu__icon-menu" href="./img/SVG/icons.svg#menu"></use>
+                        <use class="menu__icon-cross" href="./img/SVG/icons.svg#cross"></use>
+                    </svg>   
+                </button>
         </div>
     </header>
 
@@ -61,7 +71,7 @@
 
         <!-- Hero Section -->
         <section class="hero">
-                <div class="hero__container">
+                <div class="container hero__container">
                     <h1 class="hero__heading">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
                     <button class="hero__button">Замовити послугу</button>
                 </div>
@@ -149,7 +159,7 @@
                 <h2 class="team__heading">Наша команда</h2>
                 <div class="team__cards">
                     <div class="team__card">
-                        <img src="./img/Team/img (3).jpg" alt="Member Photo">
+                        <img class="team__card-photo" src="./img/Team/img (3).jpg" alt="Member Photo">
                         <div class="team__desc">
                             <h3 class="team__card-name">Ігор Дем'яненко</h3>
                             <p class="team__position">Product Designer</p>
@@ -178,7 +188,7 @@
                         </div>
                     </div>
                     <div class="team__card">
-                        <img src="./img/Team/img (4).jpg" alt="Member Photo">
+                        <img class="team__card-photo" src="./img/Team/img (4).jpg" alt="Member Photo">
                         <div class="team__desc">
                             <h3 class="team__card-name">Ольга Рєпіна</h3>
                             <p class="team__position">Frontend Developer</p>
@@ -207,7 +217,7 @@
                         </div>
                     </div>
                     <div class="team__card">
-                        <img src="./img/Team/img (5).jpg" alt="Member Photo">
+                        <img class="team__card-photo" src="./img/Team/img (5).jpg" alt="Member Photo">
                         <div class="team__desc">
                             <h3 class="team__card-name">Микола Тарасов</h3>
                             <p class="team__position">Marketing</p>
@@ -236,7 +246,7 @@
                         </div>
                     </div>
                     <div class="team__card">
-                        <img src="./img/Team/img (6).jpg" alt="Member Photo">
+                        <img class="team__card-photo" src="./img/Team/img (6).jpg" alt="Member Photo">
                         <div class="team__desc">
                             <h3 class="team__card-name">Михайло Єрмаков</h3>
                             <p class="team__position">UI Designer</p>
@@ -363,6 +373,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>
