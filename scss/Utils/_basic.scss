@@ -65,9 +65,22 @@ title--basic {
 }
 
 .container{
-  background-color: green;
+  
   @media screen and (max-width: 767.98px){
-    width: 480px;
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @media screen and (min-width: $tablet){
+    width: $tablet;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @media screen and (min-width: $desktop){
+    width: $desktop;
     margin: 0 auto;
     padding: 0 15px;
   }
