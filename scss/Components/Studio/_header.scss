@@ -1,8 +1,5 @@
 .header{
-    
-    
     &__first-wrapper{
-
         display: flex;
         align-items: center;
 
@@ -12,8 +9,7 @@
 
         @media screen and (min-width: $desktop){
             gap: 92px;
-        }
-        
+        } 
     }
 
     &__container{
@@ -24,7 +20,6 @@
         }
 
         margin: 0 auto;
-        
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -41,11 +36,10 @@
         &--accent{
         color: $accent-color; 
         }
-      }
+    }
 }
 
 .navigation{
-
     &__list{
         display: flex;
         max-width: fill-available;
@@ -78,7 +72,6 @@
 }
 
 .contacts{
-
     &__info{
         color: $text-color;
         display: flex;

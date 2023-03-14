@@ -1,5 +1,6 @@
 .hero{
     margin: 0 auto;
+
     &__container{
         padding: 0 15px;
         text-align: center;
@@ -16,7 +17,6 @@
     }
 
     &__heading{
-        
         font-family: 'Roboto';
         font-weight: 900;
         font-size: 26px;
@@ -42,5 +42,4 @@
         line-height: 30px;
         cursor: pointer;
     }
-    
 }

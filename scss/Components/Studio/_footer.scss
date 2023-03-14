@@ -19,12 +19,18 @@
         color: $accent-color; 
         }
     }
-
-    &__contatcs-box{
+    
+    &__content-wrapper-adress{
         display: flex;
         flex-direction: column;
-        gap: 8px;
-    }
+        gap: 20px;
+    }  
+}
+
+.contatcs-box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 
     &__address{
         font-family: 'Roboto';
@@ -43,21 +49,15 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
     }
+}
 
-    &__content-wrapper-adress{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+.social-box{
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-    &__social-box{
-        margin-top: 11px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    &__social-box-heading{
+    &__heading{
         font-family: 'Roboto';
 
         font-weight: 700;
@@ -73,7 +73,7 @@
         justify-content: center;
         gap: 10px;
     }
-    
+
     &__link {
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
