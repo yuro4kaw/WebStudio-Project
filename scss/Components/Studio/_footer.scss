@@ -1,0 +1,164 @@
+.footer{
+    background-color: $background-color;
+
+    &__container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &__logo {
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 0.7px;
+        color: $main-color;
+        &--accent{
+        color: $accent-color; 
+        }
+    }
+
+    &__contatcs-box{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__address{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $main-color;
+    }
+
+    &__info{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__content-wrapper-adress{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__social-box{
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__social-box-heading{
+        font-family: 'Roboto';
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+
+    &__social-links-box{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    &__link {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+      }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: $accent-color;
+    }
+
+    &__icon{
+        fill: #AFB1B8;
+    }
+
+    &__link:hover &__icon {
+        fill: $main-color;
+    }
+    
+    &__link:focus &__icon {
+        fill: $main-color;
+    }
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__heading{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: $main-color;
+    }
+
+    &__input{
+        background-color: $background-color;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+
+        padding: 15px 16px 15px 16px;
+    }
+
+    &__input::placeholder {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px 30px;
+
+        background: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+
+        color: $main-color;
+    }
+
+    &__icon{
+        margin-left: 12px;
+    }
+}

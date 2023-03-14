@@ -1,0 +1,49 @@
+.clients{
+    &__container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__heading{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: 0.03em;
+
+        color: $title-text-color;
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    &__icon{
+        fill: #AFB1B8;
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 92px;
+        width: 170px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+    }
+    &__link:hover{
+        border-color: $accent-color;
+    }
+
+    &__link:hover &__icon{
+        fill: $accent-color;
+    }
+   
+}
