@@ -326,6 +326,9 @@ title--basic {
   }
 }
 
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
 .header__first-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -568,8 +571,21 @@ title--basic {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .advantages__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .advantages__item {
+    width: calc(50% - 15px);
+  }
+}
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .specialize {
     display: none;
   }
@@ -655,6 +671,19 @@ title--basic {
 .team__link:focus .team__icon {
   fill: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .team__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team__card {
+    width: calc(50% - 15px);
+  }
+}
 
 .footer {
   background-color: #2f303a;
@@ -671,17 +700,31 @@ title--basic {
           flex-direction: column;
   gap: 60px;
 }
-.footer__logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.7px;
-  color: #ffffff;
+
+.main-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.footer__logo--accent {
-  color: #2196f3;
+@media screen and (min-width: 768px) {
+  .main-box {
+    gap: 165px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
-.footer__content-wrapper-adress {
+
+.data-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,6 +733,16 @@ title--basic {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+.data-box__logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+}
+.data-box__logo--accent {
+  color: #2196f3;
 }
 
 .contatcs-box {
@@ -868,6 +921,12 @@ title--basic {
 .newsletter__icon {
   margin-left: 12px;
 }
+@media screen and (min-width: 768px) {
+  .newsletter__input {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
 
 .clients__container {
   padding-top: 60px;
@@ -929,43 +988,7 @@ title--basic {
 }
 
 .portfolio__container {
-  margin: 94px auto;
-}
-.portfolio__button {
-  background: #f5f4fa;
-  border-radius: 4px;
-  font-size: 16px;
-  border: none;
-  padding: 6px 22px;
-  color: #212121;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
-}
-.portfolio__button-active {
-  border: none;
-  background-color: #2196f3;
-  color: #ffffff;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.portfolio__filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-}
-.portfolio__filters--wrapper {
-  margin-bottom: 50px;
+  margin: 60px auto;
 }
 .portfolio__projects {
   display: -webkit-box;
@@ -978,12 +1001,72 @@ title--basic {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.portfolio__project:hover {
+@media screen and (min-width: 768px) {
+  .portfolio__projects {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.filters-wrapper {
+  margin-bottom: 50px;
+}
+.filters__button {
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-size: 16px;
+  border: none;
+  padding: 6px 22px;
+  color: #212121;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+.filters__button-active {
+  border: none;
+  background-color: #2196f3;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project {
+  width: 450px;
+}
+.project__img {
+  width: 100%;
+}
+.project:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio__project-title {
+.project__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -996,7 +1079,7 @@ title--basic {
   border: 1px solid #EEEEEE;
   width: 100%;
 }
-.portfolio__heading {
+.project__heading {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
@@ -1004,11 +1087,16 @@ title--basic {
   letter-spacing: 0.06em;
   color: #212121;
 }
-.portfolio__type {
+.project__type {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    width: 354px;
+  }
 }/*# sourceMappingURL=main.css.map */

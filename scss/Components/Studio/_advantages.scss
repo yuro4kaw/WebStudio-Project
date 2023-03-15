@@ -1,7 +1,6 @@
 .advantages{
     &__container{
         margin: 60px auto;
-        
     }
 
     &__icon-container{
@@ -34,6 +33,18 @@
     &__item:not(:last-child){
         @media screen and (max-width: 767px){
             margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        &__items{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        &__item{
+            width: calc(50% - 15px);
         }
     }
 }

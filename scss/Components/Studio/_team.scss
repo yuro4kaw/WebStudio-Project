@@ -81,4 +81,16 @@
     &__link:focus &__icon {
         fill: $main-color;
     }
+
+    @media screen and (min-width: $tablet) {
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        &__card{
+            width: calc(50% - 15px);
+        }
+    }
 }

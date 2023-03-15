@@ -1,7 +1,33 @@
 .portfolio{
-
     &__container{
-    margin: 94px auto;
+    margin: 60px auto;
+    }
+
+    &__projects{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+
+        @media screen and (min-width: $tablet) {
+            justify-content: left;
+        }
+    }
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+    }
+
+    &-wrapper{
+        margin-bottom: 50px;
     }
 
     &__button{
@@ -21,36 +47,23 @@
     &__button-active{
         border: none;
         background-color: $accent-color;
-    color: $main-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: $main-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.project{
+    width: 450px;
+
+    &__img{
+        width: 100%;
     }
 
-    &__filters{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 8px;
-        
+    &:hover{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
-    &__filters--wrapper{
-        margin-bottom: 50px;
-    }
-
-    &__projects{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    &__project{
-        &:hover{
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-        }
-    }
-
-    &__project-title{
+    &__title{
         display: flex;
         flex-direction: column;
         gap: 4px;
@@ -77,4 +90,7 @@
         color: $text-color;
     }
 
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
 }
