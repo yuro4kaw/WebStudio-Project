@@ -303,26 +303,22 @@ title--basic {
 
 .container {
   text-align: center;
+  margin: 0 auto;
+  padding: 0;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 738px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1230px) {
   .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 1170px;
   }
 }
 
@@ -342,7 +338,7 @@ title--basic {
     gap: 87px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1230px) {
   .header__first-wrapper {
     gap: 92px;
   }
@@ -435,7 +431,7 @@ title--basic {
     display: none;
   }
 }
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1229.98px) {
   .contacts__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -447,7 +443,7 @@ title--basic {
     gap: 10px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1230px) {
   .contacts__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -585,7 +581,7 @@ title--basic {
   }
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1229.98px) {
   .specialize {
     display: none;
   }
@@ -706,7 +702,7 @@ title--basic {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1230px) {
   .footer__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -738,7 +734,7 @@ title--basic {
             justify-content: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1230px) {
   .main-box {
     gap: 60px;
   }
@@ -886,7 +882,7 @@ title--basic {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1230px) {
   .newsletter__input-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1146,7 +1142,7 @@ title--basic {
     width: 354px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1230px) {
   .project {
     width: 370px;
   }

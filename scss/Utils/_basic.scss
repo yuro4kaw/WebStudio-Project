@@ -66,21 +66,19 @@ title--basic {
 
 .container{
   text-align: center;
-  @media screen and (max-width: 767.98px){
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 0 15px;
+  margin: 0 auto;
+  padding: 0;
+  
+
+  @media screen and (min-width: $mobile) {
+    max-width: 450px;
   }
 
-  @media screen and (min-width: $tablet){
-    width: $tablet;
-    margin: 0 auto;
-    padding: 0 15px;
+  @media screen and (min-width: $tablet) {
+    max-width: 738px;
   }
 
-  @media screen and (min-width: $desktop){
-    width: $desktop;
-    margin: 0 auto;
-    padding: 0 15px;
+  @media screen and (min-width: $desktop) {
+    max-width: 1170px;
   }
 }
