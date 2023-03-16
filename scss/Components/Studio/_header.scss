@@ -1,5 +1,9 @@
 .header{
-    border-bottom: 1px solid #ECECEC;;
+    border-bottom: 1px solid #ECECEC;
+    // position: sticky;
+    // top: 0;
+    // z-index: 60;
+    // background-color: $main-color;
 
     &__first-wrapper{
         display: flex;
@@ -38,6 +42,11 @@
         &--accent{
         color: $accent-color; 
         }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 26px;
+            line-height: 31px;
+        }
     }
 }
 
@@ -75,6 +84,8 @@
 
 .contacts{
     &__info{
+        
+
         color: $text-color;
         display: flex;
         align-items: center;
@@ -83,6 +94,13 @@
         line-height: 1.14;    
         &:hover .contacts__icon {
             fill: $accent-color;
+        }
+        &--phone{
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
         }
     }
 

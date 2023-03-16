@@ -373,6 +373,12 @@ title--basic {
 .header__logo--accent {
   color: #2196f3;
 }
+@media screen and (min-width: 1230px) {
+  .header__logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
 
 .navigation__list {
   display: -webkit-box;
@@ -419,6 +425,13 @@ title--basic {
 }
 .contacts__info:hover .contacts__icon {
   fill: #2196f3;
+}
+.contacts__info--phone {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .contacts__icon {
   fill: #757575;
@@ -509,6 +522,11 @@ title--basic {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1230px) {
+  .hero__container {
+    height: 600px;
+  }
+}
 .hero__heading {
   font-family: "Roboto";
   font-weight: 900;
@@ -518,6 +536,12 @@ title--basic {
   letter-spacing: 0.06em;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 1230px) {
+  .hero__heading {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 .hero__button {
   background: #2196f3;
@@ -534,14 +558,24 @@ title--basic {
   line-height: 30px;
   cursor: pointer;
 }
+@media screen and (min-width: 1230px) {
+  .hero__button {
+    padding: 10px 32px;
+  }
+}
 
 .advantages__container {
   margin: 60px auto;
 }
+@media screen and (min-width: 1230px) {
+  .advantages__container {
+    margin: 94px auto;
+  }
+}
 .advantages__icon-container {
   background-color: #f5f4fa;
   text-align: center;
-  padding: 25px 0;
+  padding: 24px 0;
 }
 .advantages__header {
   font-family: "Roboto";
@@ -552,6 +586,7 @@ title--basic {
   text-transform: uppercase;
   color: #212121;
   padding: 30px 0 10px 0;
+  text-align: left;
 }
 .advantages__text {
   text-align: left;
@@ -580,11 +615,74 @@ title--basic {
     width: calc(50% - 15px);
   }
 }
+@media screen and (min-width: 1230px) {
+  .advantages__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .advantages__item {
+    width: 270px;
+  }
+}
 
 @media screen and (max-width: 1229.98px) {
   .specialize {
     display: none;
   }
+}
+.specialize__container {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 94px;
+}
+.specialize__heading {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-bottom: 50px;
+}
+.specialize__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.specialize__photo-container {
+  position: relative;
+}
+.specialize__label-container {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.specialize__label {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .team {
@@ -594,22 +692,42 @@ title--basic {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1230px) {
+  .team__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .team__heading {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1230px) {
+  .team__heading {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767.98px) {
   .team__card:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 .team__card {
   background-color: #ffffff;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 24px;
+  padding-bottom: 30px;
 }
 .team__card-photo {
   padding-bottom: 30px;
@@ -680,6 +798,19 @@ title--basic {
     width: calc(50% - 15px);
   }
 }
+@media screen and (min-width: 1230px) {
+  .team__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team__card {
+    width: 270px;
+  }
+}
 
 .footer {
   background-color: #2f303a;
@@ -736,7 +867,7 @@ title--basic {
 }
 @media screen and (min-width: 1230px) {
   .main-box {
-    gap: 60px;
+    gap: 70px;
   }
 }
 
@@ -790,7 +921,7 @@ title--basic {
 }
 
 .social-box {
-  margin-top: 15px;
+  margin-top: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,6 +994,11 @@ title--basic {
     width: 570px;
   }
 }
+@media screen and (min-width: 1230px) {
+  .newsletter {
+    margin-top: 12px;
+  }
+}
 .newsletter__heading {
   font-family: "Roboto";
   font-weight: 700;
@@ -888,6 +1024,7 @@ title--basic {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 12px;
   }
 }
 .newsletter__input {
@@ -971,16 +1108,12 @@ title--basic {
 }
 
 .clients__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
+  margin: 60px auto;
+}
+@media screen and (min-width: 1230px) {
+  .clients__container {
+    margin: 94px auto;
+  }
 }
 .clients__heading {
   font-family: "Roboto";
@@ -988,7 +1121,15 @@ title--basic {
   font-size: 28px;
   line-height: 33px;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
   color: #212121;
+}
+@media screen and (min-width: 1230px) {
+  .clients__heading {
+    padding-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 .clients__wrapper {
   display: -webkit-box;

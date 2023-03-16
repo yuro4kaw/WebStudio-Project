@@ -1,10 +1,10 @@
 .clients{
     &__container{
-        padding-top: 60px;
-        padding-bottom: 60px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+        margin: 60px auto;
+        
+        @media screen and (min-width: $desktop) {
+            margin: 94px auto;
+        }
     }
 
     &__heading{
@@ -13,8 +13,15 @@
         font-size: 28px;
         line-height: 33px;
         letter-spacing: 0.03em;
+        padding-bottom: 30px;
 
         color: $title-text-color;
+
+        @media screen and (min-width: $desktop) {
+            padding-bottom: 50px;
+            font-size: 36px;
+            line-height: 42px;
+        }
     }
 
     &__wrapper{
@@ -45,5 +52,4 @@
     &__link:hover &__icon{
         fill: $accent-color;
     }
-   
 }

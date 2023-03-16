@@ -29,7 +29,7 @@
     }  
 
     @media screen and (min-width: $desktop) {
-        gap: 60px;
+        gap: 70px;
     }  
 }
 
@@ -76,7 +76,7 @@
 }
 
 .social-box{
-    margin-top: 15px;
+    margin-top: 11px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -137,6 +137,10 @@
         width: 570px;
     }
 
+    @media screen and (min-width: $desktop) {
+        margin-top: 12px;
+    }
+
     &__heading{
         
         font-family: 'Roboto';
@@ -156,7 +160,10 @@
 
         @media screen and (min-width: $desktop) {
             flex-direction: row;
+            gap: 12px;
         }
+
+        
     }
 
     &__input{
