@@ -63,6 +63,7 @@
     width: 450px;
     text-align: left;
     position: relative;
+    transition: $standart-transition;
 
     &__img{
         width: 100%;
@@ -71,6 +72,33 @@
 
     &:hover{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    
+    &__img-wrapper{
+        position: absolute; 
+        visibility: hidden;
+        color: transparent;
+        transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    &:hover &__img-wrapper{
+        visibility: visible;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(33, 150, 243, 0.9);
+        height: 294px;
+        padding-left: 24px;
+        padding-right: 24px;
+        color: $main-color;
+    
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    
+        letter-spacing: 0.03em;
     }
 
     &__title{
@@ -101,10 +129,6 @@
         color: $text-color;
     }
 
-    &__img-wrapper{
-        display: none;
-    }
-
     @media screen and (min-width: $tablet) {
         width: 354px;
     }
@@ -112,23 +136,4 @@
     @media screen and (min-width: $desktop) {
         width: 370px;
     }
-}
-
-.project:hover .project__img-wrapper{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(33, 150, 243, 0.9);
-    height: 294px;
-    padding-left: 24px;
-    padding-right: 24px;
-    color: $main-color;
-
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-
-    letter-spacing: 0.03em;
 }
