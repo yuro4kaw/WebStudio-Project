@@ -41,10 +41,19 @@
         align-items: center;
         justify-content: center;
         height: 92px;
-        width: 170px;
+        width: 210px;
         border: 1px solid #afb1b8;
         border-radius: 4px;
+
+        @media screen and (min-width: $tablet){
+            width: 226px;
+        }
+
+        @media screen and (min-width: $desktop){
+            width: 170px;
+        }
     }
+    
     &__link:hover{
         border-color: $accent-color;
     }

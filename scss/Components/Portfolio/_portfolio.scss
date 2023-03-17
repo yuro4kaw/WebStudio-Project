@@ -1,6 +1,9 @@
 .portfolio{
     &__container{
     margin: 60px auto;
+        @media screen and (min-width: $desktop) {
+            margin: 93px auto;
+        }
     }
 
     &__projects{
@@ -28,6 +31,9 @@
 
     &-wrapper{
         margin-bottom: 50px;
+        @media screen and (min-width: $tablet) and (max-width: 1229.98px){
+            margin-bottom: 30px;
+        }
     }
 
     &__button{
@@ -45,6 +51,7 @@
     }
 
     &__button-active{
+        padding: 6px 25px;
         border: none;
         background-color: $accent-color;
         color: $main-color;
@@ -54,9 +61,12 @@
 
 .project{
     width: 450px;
+    text-align: left;
+    position: relative;
 
     &__img{
         width: 100%;
+        height: 294px;
     }
 
     &:hover{
@@ -70,6 +80,7 @@
         padding: 20px 24px;
         border: 1px solid #EEEEEE;
         width: 100%;
+        border-top: none;
     }
 
     &__heading{
@@ -90,6 +101,10 @@
         color: $text-color;
     }
 
+    &__img-wrapper{
+        display: none;
+    }
+
     @media screen and (min-width: $tablet) {
         width: 354px;
     }
@@ -97,4 +112,23 @@
     @media screen and (min-width: $desktop) {
         width: 370px;
     }
+}
+
+.project:hover .project__img-wrapper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 150, 243, 0.9);
+    height: 294px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: $main-color;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+    letter-spacing: 0.03em;
 }

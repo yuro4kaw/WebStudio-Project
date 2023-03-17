@@ -68,7 +68,9 @@ title--basic {
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  
+  @media screen and (max-width: 479.98px) {
+    padding: 0 10px;
+  }
 
   @media screen and (min-width: $mobile) {
     max-width: 450px;

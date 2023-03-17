@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 93px;
+        gap: 60px;
         justify-content: space-between;
         
         @media screen and (min-width: $desktop) {
@@ -19,7 +19,7 @@
 
 .main-box{
     display: flex;
-    gap: 70px;
+    gap: 45px;
     flex-direction: column;
         
     @media screen and (min-width: $tablet) {
@@ -46,6 +46,10 @@
         color: $main-color;
         &--accent{
         color: $accent-color; 
+        }
+        @media screen and (min-width: $tablet) and (max-width: 1229.98px) {
+            font-size: 24px;
+            line-height: 28px;
         }
     }
 }
@@ -83,7 +87,6 @@
 
     &__heading{
         font-family: 'Roboto';
-
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
@@ -142,7 +145,6 @@
     }
 
     &__heading{
-        
         font-family: 'Roboto';
         font-weight: 700;
         font-size: 14px;
@@ -162,8 +164,6 @@
             flex-direction: row;
             gap: 12px;
         }
-
-        
     }
 
     &__input{
@@ -216,6 +216,4 @@
             margin: 0 auto;
         }
     }
-
-    
 }
