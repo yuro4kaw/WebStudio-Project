@@ -18,13 +18,13 @@
     <header class="header">
         <div class="container header__container">
             <div class="header__first-wrapper">
-                <a class="header__logo link--interactive" href="index.html">
+                <a class="header__logo link--interactive" href="index.html" data-logo>
                     <span class="header__logo--accent">Web</span><span =->Studio</span>
                 </a>
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
-                            <a class="navigation__link " href="index.html" >Студія</a>
+                            <a class="navigation__link" href="index.html" >Студія</a>
                         </li>
                         <li class="navigation__item">
                             <a class="navigation__link navigation__link--active" href="portfolio.html" >Портфоліо</a>
@@ -53,16 +53,65 @@
             </div>
 
             <button 
-                 class="menu" 
+                 class="menu-button" 
                  type="button" 
                  aria-expanded="false" 
-                 aria-controls="menu-container"
+                 aria-controls="menu"
                  data-menu-button >
-                    <svg class="menu__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use class="menu__icon-menu" href="./img/SVG/icons.svg#menu"></use>
-                        <use class="menu__icon-cross" href="./img/SVG/icons.svg#cross"></use>
+                    <svg class="menu-button__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="menu-button__icon-menu" href="./img/SVG/icons.svg#menu"></use>
+                        <use class="menu-button__icon-cross" href="./img/SVG/icons.svg#cross"></use>
                     </svg>   
             </button>
+
+            <div class="menu" id="menu" data-menu>
+
+                <div class="container menu__container">
+
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html" >Студія</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link--active" href="portfolio.html" >Портфоліо</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" >Контакти</a>
+                        </li>
+                    </ul>
+
+                    
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__info menu__info--phone link--interactive" href="tel:+380961111111" >
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="menu__item--mail">
+                            <a class="menu__info link--interactive" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- <div class="menu__links">
+                        <a class="menu__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                            Instagram
+                        </a>
+                        <a class="menu__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                            Twitter
+                        </a>
+                        <a class="menu__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                            Facebook
+                        </a>
+                        <a class="menu__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                            LinkedIn
+                        </a>
+                    </div> -->
+
+                </div>
+                
+            </div>
         </div>
     </header>
 
@@ -226,5 +275,6 @@
         </div>
     </footer>
 
+    <script src="./js/menu.js"></script>
 </body>
 </html>

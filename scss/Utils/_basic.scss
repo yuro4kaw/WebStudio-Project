@@ -5,6 +5,13 @@ ol {
   list-style-type: none;
 }
 
+html, body {
+  &.is-open{
+    margin: 0; height: 100%; overflow: hidden
+  }
+  
+}
+
 h1,
 h2,
 h3,

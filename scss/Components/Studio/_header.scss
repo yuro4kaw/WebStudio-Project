@@ -4,6 +4,7 @@
     // top: 0;
     // z-index: 60;
     // background-color: $main-color;
+    position: relative;
 
     &__first-wrapper{
         display: flex;
@@ -46,6 +47,10 @@
         @media screen and (min-width: $desktop) {
             font-size: 26px;
             line-height: 31px;
+        }
+
+        &.is-open{
+            display: none;
         }
     }
 }
@@ -143,37 +148,5 @@
            display: flex; 
            gap: 30px;
         }
-    }
-}
-
-.menu{
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-
-    &__icon-menu{
-        width: 50px;
-    }
-
-    &__icon-cross{
-        display: none;
-    }
-
-    &.is-open &__icon-cross{
-        display: block;
-    }
-
-    &.is-open &__icon-menu{
-        display: none;
-    }
-
-    &__svg{
-        padding: 4px 5px;
     }
 }
