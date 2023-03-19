@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
+    <link rel="icon" href="./img/logo.jpg">
 
     <link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -24,7 +25,7 @@
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
-                            <a class="navigation__link " href="index.html" >Студія</a>
+                            <a class="navigation__link" href="index.html" >Студія</a>
                         </li>
                         <li class="navigation__item">
                             <a class="navigation__link navigation__link--active" href="portfolio.html" >Портфоліо</a>
@@ -53,20 +54,19 @@
             </div>
 
             <button 
-                 class="menu" 
+                 class="menu js-open-menu" 
                  type="button" 
                  aria-expanded="false" 
                  aria-controls="menu-container"
-                 data-menu-button >
+                 data-menu-button>
                     <svg class="menu__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use class="menu__icon-menu" href="./img/SVG/icons.svg#menu"></use>
-                        <use class="menu__icon-cross" href="./img/SVG/icons.svg#cross"></use>
                     </svg>   
             </button>
         </div>
     </header>
 
-    <!-- Data -->
+    <!-- Main -->
     <main class="main">
 
         <!-- Portfolio Section -->
@@ -225,6 +225,61 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="menu-container__wrapper">
+            
+            <button class="menu menu-close-button js-close-menu">
+                <svg class="menu__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="menu__icon-menu" href="./img/SVG/icons.svg#cross"></use>
+                </svg>   
+            </button>
+
+            <div class="menu-data-container">
+                <ul class="mobile-menu">
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link" href="index.html">Студія</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link mobile-menu-link--active" href="portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link" href="">Контакти</a>
+                    </li>
+                </ul>
+
+                <div class="mobile-container">
+                    <ul class="mobile-contacts">
+                        <li class="mobile-contacts-item mobile-contacts-item--phone">
+                            <a class="mobile-contacts-link-phone" href="tel:+380961111111">+380961111111</a>
+                        </li>
+                        <li class="mobile-contacts-item">
+                            <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                
+                    <ul class="mobile-socials">
+                        <li class="mobile-socials-item">
+                            <a class="mobile-socials-link" href="">Instagram</a>
+                        </li>
+                        <li class="mobile-socials-item">
+                            <a class="mobile-socials-link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile-socials-item">
+                            <a class="mobile-socials-link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile-socials-item">
+                            <a class="mobile-socials-link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>

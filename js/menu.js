@@ -1,10 +1,24 @@
-const menuBtnRef = document.querySelector("[data-menu-button]");
-const mobileMenuRef = document.querySelector("[data-menu]");
+const mobileMenu = document.querySelector('.js-menu-container');
+const openMenuBtn = document.querySelector('.js-open-menu');
+const closeMenuBtn = document.querySelector('.js-close-menu');
 
-menuBtnRef.addEventListener("click", () => {
-    const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-    menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
 
-    mobileMenuRef.classList.toggle("is-open");
-})
+const openMenu = () => {
+    mobileMenu.classList.add('menu-visible');
+    document.body.style.overflow = 'hidden';
+};
+
+const closeMenu = () => {
+    mobileMenu.classList.remove('menu-visible');
+    document.body.style.overflow = 'visible';
+};
+
+window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('menu-visible');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    document.body.style.overflow = 'visible';
+});
+
+openMenuBtn.addEventListener('click', openMenu);
+closeMenuBtn.addEventListener('click', closeMenu);

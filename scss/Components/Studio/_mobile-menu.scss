@@ -1,0 +1,117 @@
+.menu-container{
+    display: none;
+    
+    background-color: $main-color;
+    width: 100%;
+
+    &__wrapper{
+        max-width: 480px;
+        background-color: $main-color;
+        margin: 0 auto;
+    }
+
+    &.menu-visible{
+        display: block;
+        position: absolute;
+        top: 0px;
+    }
+}
+
+.menu{
+    &-close-button{
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}
+
+.menu-data-container{
+    padding: 48px 0 100px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.mobile-menu{
+    display: flex;
+    height: 208px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-link{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+
+        color: $title-text-color;
+
+        &--active{
+            color: $accent-color;
+        }
+    }
+}
+
+.mobile-container{
+    display: flex;
+    flex-direction: column;
+    height: 164px;
+    justify-content: space-between;
+}
+
+.mobile-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &-link{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        
+        color: $text-color;
+
+        &-phone{
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+
+            color: $accent-color;
+        }
+    }
+}
+
+.mobile-socials{
+    display: flex;
+    gap: 20px;
+    
+    
+    &-item{
+        position: relative;
+    
+        &:not(:first-child):before{
+            content: " ";
+            position: absolute;
+            height: 22px;
+            left: -10px;
+            width: 1px;
+            background: rgba(33, 33, 33, 0.2);
+        }
+    }
+
+    &-link{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+
+        color: $accent-color;
+    }
+}
