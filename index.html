@@ -73,7 +73,7 @@
         <section class="hero">
                 <div class="hero__container">
                     <h1 class="hero__heading">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br> ВАШОГО БІЗНЕСУ</h1>
-                    <button class="hero__button button--interactive">Замовити послугу</button>
+                    <button class="hero__button button--interactive js-open-modal">Замовити послугу</button>
                 </div>
         </section>
 
@@ -444,7 +444,77 @@
         </div>
     </div>
 
-    <script src="./js/menu.js"></script>
+    <!-- Modal Window -->
+    <div class="modal-window js-modal-window">
+        <div class="modal">
+            <button class="modal-close-button js-close-modal">
+                <svg class="modal__svg" width="35" height="33" aria-label="Переключатель модального окна">
+                    <use class="modal__icon-menu" href="./img/SVG/icons.svg#cross"></use>
+                </svg>   
+            </button>
 
+            <div class="client">
+                <form class="client__form" name="client-form">
+                    <h2 class="client__title">Залиште свої дані, ми вам передзвонимо</h2>
+                    <div class="client__inputs">
+                        <label class="client__label" for="name">
+                            <span class="client__name">Ім'я</span>
+                            <div class="client__container">
+                            <input class="client__input" type="text" name="user-name" id="name">
+                            <svg class="client__icon" width="18" height="18">
+                                <use href="/img/SVG/symbol-defs.svg#icon-modal-name"></use>
+                            </svg>
+                            </div>
+                        </label>
+                
+                        <label class="client__label" for="phone">
+                            <span class="client__name">Телефон</span>
+                            <div class="client__container">
+                            <input class="client__input" type="text" name="user-phone" id="phone">
+                            <svg class="client__icon" width="18" height="18">
+                                <use href="/img/SVG/symbol-defs.svg#icon-modal-tell"></use>
+                            </svg>
+                            </div>
+                        </label>
+                
+                        <label class="client__label" for="email">
+                            <span class="client__name">Пошта</span>
+                            <div class="client__container">
+                            <input class="client__input" type="text" name="user-email" id="email">
+                            <svg class="client__icon" width="18" height="18">
+                                <use href="/img/SVG/symbol-defs.svg#icon-modal-mail"></use>
+                            </svg>
+                            </div>
+                        </label>
+                
+                        <label class="client__label" for="feedback">
+                            <span class="client__name">Коментар</span>
+                            
+                            <textarea class="client__feedback" name="user-feedback" id="feedback" rows="10"
+                                placeholder="Введіть текст"></textarea>
+                            
+                        </label>
+                    </div>
+                    <div class="agreement__container">
+                        <label class="agreement" for="user-agreement">
+                            <input class="checkbox hidden" type="checkbox" value="accept-policy" name="user-agreement" id="user-agreement">
+                            <svg class="checkbox__icons" width="16" height="15">
+                            <use class="checkbox__uncheck" href="./img/SVG/symbol-defs.svg#checkbox"></use>
+                            <use class="checkbox__check" href="./img/SVG/symbol-defs.svg#icon-checkmark"></use>
+                            </svg>
+                            <span class="agreement__title">Погоджуюся з розсилкою та приймаю
+                            <a class="agreement__link" href="">Умови договору</a>
+                            </span>
+                        </label>
+                        <button class="agreement__btn" type="submit">Відправити</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+   
 </body>
 </html>
