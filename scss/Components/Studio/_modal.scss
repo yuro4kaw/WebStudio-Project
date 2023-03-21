@@ -214,4 +214,12 @@
 .checkbox:focus + .checkbox__icons .checkbox__uncheck {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-    
+
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+}
