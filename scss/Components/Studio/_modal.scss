@@ -188,38 +188,30 @@
         text-align: center;
         width: 200px;
     }
-  }
+}
   
-    .checkbox__icons {
-        margin-right: 7px;
-        cursor: pointer;
+.checkbox__icons {
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.checkbox__check {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-  
-    .checkbox__check {
-        opacity: 0;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     }
-  
-    .checkbox:checked + .checkbox__icons .checkbox__uncheck {
-        opacity: 0;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  
-    .checkbox:checked + .checkbox__icons .checkbox__check {
-        opacity: 1;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  
-    .checkbox:hover + .checkbox__icons .checkbox__uncheck,
-    .checkbox:focus + .checkbox__icons .checkbox__uncheck {
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+
+.checkbox:checked + .checkbox__icons .checkbox__uncheck {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .checkbox__icons .checkbox__check {
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:hover + .checkbox__icons .checkbox__uncheck,
+.checkbox:focus + .checkbox__icons .checkbox__uncheck {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
     
-    .hidden {
-        position: absolute;
-        white-space: nowrap;
-        overflow: hidden;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-    }
